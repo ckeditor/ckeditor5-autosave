@@ -13,7 +13,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PendingActions from '@ckeditor/ckeditor5-core/src/pendingactions';
 
 describe( 'Autosave', () => {
-	const sandbox = sinon.sandbox.create( { useFakeTimers: true } );
+	const sandbox = sinon.sandbox;
 	let editor, element, autosave;
 
 	afterEach( () => {

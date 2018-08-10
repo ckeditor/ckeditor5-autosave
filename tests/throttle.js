@@ -6,9 +6,7 @@
 import throttle from '../src/throttle';
 
 describe( 'throttle', () => {
-	const sandbox = sinon.sandbox.create( {
-		useFakeTimers: true
-	} );
+	const sandbox = sinon.sandbox;
 
 	beforeEach( () => {
 		sandbox.useFakeTimers( { now: 1000 } );
