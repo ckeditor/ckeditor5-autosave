@@ -194,6 +194,7 @@ export default class Autosave extends Plugin {
 		// it's done on the editor's destroy event with the highest priority.
 
 		this._domEmitter.stopListening();
+		this._destroyObservable();
 		super.destroy();
 	}
 
